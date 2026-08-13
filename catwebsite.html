@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CatHome — Cat Adoption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background-orb orb-one"></div>
+<div class="background-orb orb-two"></div>
+<div class="background-orb orb-three"></div>
+
+<div class="page">
+    <div class="app">
+
+        <aside class="sidebar">
+            <div>
+                <div class="brand">
+                    <div class="brand-icon">♡</div>
+                    Cat<span>Home</span>
+                </div>
+
+                <div class="sidebar-main">
+                    <div class="eyebrow">✦ Premium adoption page</div>
+
+                    <h1>Find your soft little chaos.</h1>
+
+                    <p>
+                        Choose a cat, open their profile, check their personality,
+                        and add them to your adoption list.
+                    </p>
+
+                    <div class="sidebar-stats">
+                        <div class="stat">
+                            <strong>4</strong>
+                            <span>cats available</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>100%</strong>
+                            <span>cute energy</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>0</strong>
+                            <span>bad vibes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                Designed for a warm, modern and friendly adoption experience.
+            </div>
+        </aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <nav class="nav">
+                    <a href="#home">Home</a>
+                    <a href="#cats">Cats</a>
+                    <a href="#adoption">Adoption</a>
+                    <a href="#selected">Selected</a>
+                </nav>
+
+                <button class="top-action" id="viewCatsBtn">
+                    View cats
+                </button>
+            </header>
+
+            <section class="hero" id="home">
+                <div class="hero-copy">
+                    <div class="eyebrow">New cats waiting for a home</div>
+
+                    <h2>Adopt a cat with <span>main character energy.</span></h2>
+
+                    <p>
+                        Every cat has a small profile, personality details and a best-home match.
+                        Open the profile card and build your adoption list.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="primary-btn" id="meetCatsBtn">Meet the cats</button>
+                        <button class="secondary-btn" id="randomCatBtn">Surprise me</button>
+                    </div>
+                </div>
+
+                <div class="hero-cat">
+                    <div class="hero-cat-card">
+                        <img src="cat_2.PNG" alt="Cute orange cat">
+                    </div>
+
+                    <div class="floating-label label-one">Soft personality</div>
+                    <div class="floating-label label-two">Ready to adopt</div>
+                </div>
+            </section>
+
+            <section class="dashboard" id="cats">
+
+                <div>
+                    <div class="section-head">
+                        <div>
+                            <h2>Available cats</h2>
+                            <p>Click About to open a profile window.</p>
+                        </div>
+                    </div>
+
+                    <div class="cats">
+
+                        <div class="card">
+                            <div class="card-top">
+                                <span class="pill">Calm</span>
+                                <button class="heart" data-add="Luna">♡</button>
+                            </div>
+
+                            <div class="cat-img">
+                                <img src="cat_2.PNG" alt="Luna cat">
+                            </div>
+
+                            <h3>Luna</h3>
+
+                            <p>
+                                A soft and dreamy cat who loves warm blankets,
+                                quiet rooms and peaceful evenings.
+                            </p>
+
+                            <div class="mini-data">
+                                <span>2 years</span>
+                                <span>Quiet home</span>
+                                <span>Gentle</span>
+                            </div>
+
+                            <div class="card-actions">
+                                <button 
+                                    class="about-btn"
+                                    data-name="Luna"
+                                    data-description="Luna is a calm and gentle cat. She loves warm blankets, quiet rooms and soft cuddles. She would be perfect for someone who wants a peaceful companion."
+                                    data-age="2 years old"
+                                    data-personality="Calm and sweet"
+                                    data-home="Quiet home"
+                                    data-tag="Calm">
+                                    About Luna
+                                </button>
+
+                                <button class="quick-add" data-add="Luna">+</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <span class="pill">Playful</span>
+                                <button class="heart" data-add="Mimi">♡</button>
+                            </div>
+
+                            <div class="cat-img">
+                                <img src="cat_2.PNG" alt="Mimi cat">
+                            </div>
+
+                            <h3>Mimi</h3>
+
+                            <p>
+                                A funny little kitty who likes toys, attention
+                                and running around the house.
+                            </p>
+
+                            <div class="mini-data">
+                                <span>1 year</span>
+                                <span>Active owner</span>
+                                <span>Curious</span>
+                            </div>
+
+                            <div class="card-actions">
+                                <button 
+                                    class="about-btn"
+                                    data-name="Mimi"
+                                    data-description="Mimi is funny, energetic and very curious. She loves toys, attention and little adventures around the house."
+                                    data-age="1 year old"
+                                    data-personality="Playful and active"
+                                    data-home="Active owner"
+                                    data-tag="Playful">
+                                    About Mimi
+                                </button>
+
+                                <button class="quick-add" data-add="Mimi">+</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <span class="pill">Social</span>
+                                <button class="heart" data-add="Sunny">♡</button>
+                            </div>
+
+                            <div class="cat-img">
+                                <img src="cat_2.PNG" alt="Sunny cat">
+                            </div>
+
+                            <h3>Sunny</h3>
+
+                            <p>
+                                A bright orange cat who likes people, sunlight
+                                and sitting near the window.
+                            </p>
+
+                            <div class="mini-data">
+                                <span>3 years</span>
+                                <span>Family home</span>
+                                <span>Friendly</span>
+                            </div>
+
+                            <div class="card-actions">
+                                <button 
+                                    class="about-btn"
+                                    data-name="Sunny"
+                                    data-description="Sunny is friendly, bright and social. She enjoys meeting new people and watching the world from the window."
+                                    data-age="3 years old"
+                                    data-personality="Friendly and social"
+                                    data-home="Family home"
+                                    data-tag="Social">
+                                    About Sunny
+                                </button>
+
+                                <button class="quick-add" data-add="Sunny">+</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <span class="pill">Gentle</span>
+                                <button class="heart" data-add="Peach">♡</button>
+                            </div>
+
+                            <div class="cat-img">
+                                <img src="cat_2.PNG" alt="Peach cat">
+                            </div>
+
+                            <h3>Peach</h3>
+
+                            <p>
+                                A sweet cat with cute eyes, a soft personality
+                                and a gentle heart.
+                            </p>
+
+                            <div class="mini-data">
+                                <span>2.5 years</span>
+                                <span>Patient owner</span>
+                                <span>Shy</span>
+                            </div>
+
+                            <div class="card-actions">
+                                <button 
+                                    class="about-btn"
+                                    data-name="Peach"
+                                    data-description="Peach is shy at first, but very loving when she feels safe. She needs a kind and patient owner."
+                                    data-age="2.5 years old"
+                                    data-personality="Shy but loving"
+                                    data-home="Patient owner"
+                                    data-tag="Gentle">
+                                    About Peach
+                                </button>
+
+                                <button class="quick-add" data-add="Peach">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <aside class="side-panel" id="adoption">
+
+                    <div class="counter-box">
+                        <h2>Adoption Counter</h2>
+                        <p>Choose how many cats you want to adopt.</p>
+
+                        <div id="number">0</div>
+
+                        <div class="counter-buttons">
+                            <button id="minus">-</button>
+                            <button id="plus">+</button>
+                        </div>
+
+                        <div class="message" id="message">Choose your cats ♡</div>
+
+                        <div class="progress-wrap">
+                            <div class="progress-top">
+                                <span>Adoption list</span>
+                                <span id="progressText">0 / 4</span>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="selected-box" id="selected">
+                        <h2>Selected cats</h2>
+
+                        <div class="selected-list" id="selectedList"></div>
+
+                        <p class="empty" id="emptyText">
+                            No cats selected yet. Press + or open a profile.
+                        </p>
+                    </div>
+
+                </aside>
+
+            </section>
+
+        </main>
+    </div>
+</div>
+
+<div class="modal" id="catModal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+
+        <div class="modal-image">
+            <img src="cat_2.PNG" alt="Cute orange cat">
+        </div>
+
+        <div class="modal-info">
+            <span class="pill" id="modalTag">Tag</span>
+
+            <h2 id="modalName">Cat Name</h2>
+
+            <p class="description" id="modalDescription">
+                Cat description will appear here.
+            </p>
+
+            <div class="cat-info">
+                <div class="info-row">
+                    <strong>Age</strong>
+                    <span id="modalAge"></span>
+                </div>
+
+                <div class="info-row">
+                    <strong>Personality</strong>
+                    <span id="modalPersonality"></span>
+                </div>
+
+                <div class="info-row">
+                    <strong>Best for</strong>
+                    <span id="modalHome"></span>
+                </div>
+            </div>
+
+            <button class="adopt-modal-btn" id="addModalCatBtn">
+                Add this cat to adoption list
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
